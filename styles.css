@@ -1,0 +1,270 @@
+
+/* Aspectos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(7, 7, 7);
+
+}
+.seccion-oscura {
+    background-color: black;
+    color: white;
+}
+.seccion-clara {
+    background-color: rgb(235, 218, 218);
+    color: black;
+}
+
+/* navbar */
+.navbar {
+    background-image: linear-gradient(
+        to right, #8255d6 0%,
+        #6d4bcc 0%,
+        #672dd3 21%,
+        #4d1bc0 52%,
+        #361ab3 78%,
+        #200750 100%
+    );  
+}
+    
+.icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item {
+    list-style: none;
+    padding: 15px;
+    
+}
+.nav-link {
+    color: white;
+    text-decoration: none;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; 
+}
+
+.nav-link:hover {
+    color: rgb(236, 149, 140);
+    
+}
+
+
+/* title section */
+.title__section {
+    padding: 20px 30px ;
+    text-align: center;
+    
+}
+h1 {
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Tillana', cursiva;
+    font-weight:700;
+    
+}
+
+.braid {
+    width: 220px;
+    height: 220px;
+    
+    
+}
+/* carousel */
+.carousel__container {
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.carousel__list {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.carousel__prev,
+.carousel__next {
+    position: absolute;
+    display: block;
+    width: 38px;
+    height: 38px;
+    border: none;
+    top: calc(58% - 38px);
+    cursor: pointer;
+    line-height: 38px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+.carousel__prev:hover,
+.carousel__next:hover{
+    opacity: 100%;
+}
+.carousel__prev {
+    left: 50px;
+}
+.carousel__next {
+    right: 50px;
+}
+.carousel__element {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-family: 'Tillana', cursiva;
+
+}
+
+
+/* button choose */
+
+.button{
+    font-size: 1rem;
+    background-image: linear-gradient(
+        to right, #8255d6 0%,
+        #6d4bcc 0%,
+        #672dd3 21%,
+        #4d1bc0 52%,
+        #361ab3 78%,
+        #200750 100%
+    );
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.35s;
+    outline: none;
+    font-weight: bold;
+    margin: 20px;
+    
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.button:hover {
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+/*Form*/
+
+.title {
+    padding: 25px 35px ;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Tillana', cursiva;
+    font-weight: bold;
+}
+.fields {
+    text-align: center;
+    justify-content: center;
+    margin: 1.5rem;
+    
+}
+.field {
+    padding: 15px;
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+input {
+    padding: 6px;
+}
+/*Consultas*/
+
+
+.container-consultas {
+    height: 450px;
+}
+/*Contacto*/
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+.contacto .rectangulo {
+    margin-top: -3rem;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contacto .descripcion {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contacto button {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+
+}
+.contacto button:hover {
+    background-color: white;
+    color: black;
+}
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i {
+    color: black;
+}
+
+/*turnos*/
+.turnos {
+    background-image:linear-gradient(to right, #dd99da 0%, #80f5eb 100%); ;
+}
+
+/*footer*/
+.copyright {
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+/*@media screen and (min-width: 700px) {
+    .choose__btn {
+        margin-left: 38%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .choose__btn {
+        margin-left: 42%;
+    }
+}
+
+
